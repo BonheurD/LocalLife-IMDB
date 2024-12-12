@@ -10,6 +10,6 @@ I divided the code into three parts, but I only had time to implement the first 
 
 1. **format_data.py**: This will format the data, merging columns for movie IDs, movie titles, and reviews. Below is an example of how it would look if there existed a file consisting of the columns `tconst` and `reviews`. If another dataset solution is found, this would need to be altered.
 2. **sentiment_analysis.py**: This will perform sentiment analysis for each review, creating a new file with the sentiment analysis added. The new file will have the following format: `movie_id | movie_title | review | sentiment`.
-3. **(Unimplemented)**: This part will allow the user to request the reviews of a movie. My initial idea is to use the OpenAI API to determine the movie in question and then perform a search (most likely binary + linear) in the listed movies based on the movie title. Finally, the desired reviews will be returned.
+3. **(Not implemented)**: This part will allow the user to request the reviews of a movie. My initial idea is to use the OpenAI API to determine the movie in question and then perform a search (most likely binary + linear) in the listed movies based on the movie title. Finally, the desired reviews will be returned.
 
-If I had more time, I would look for a better dataset or implement one myself. Additionally, I would implement step 3 to return reviews based on user requests.
+If I had more time, I would look for a better dataset or implement one myself. I would also change the implementation in step 1, and not merge the two files. I think that for step 3, this would make the search process more efficient. Finally, I would implement step 3 to return reviews based on user requests.
